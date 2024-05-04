@@ -463,7 +463,7 @@ static int32_t i960_cobr_disp (uint32_t op)
 {
 	const int32_t disp = op & 0x1ffc;
 
-	return op & 0x1000 ? disp | ~0x1fff : disp;  /* sign extend */
+	return op & 0x1000 ? disp | ~0x1fff : disp;  /* sign-extend */
 }
 
 static int32_t i960_mem_disp (uint32_t op, uint32_t disp)
